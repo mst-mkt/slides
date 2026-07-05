@@ -6,6 +6,10 @@ export default defineConfig({
   },
   run: {
     tasks: {
+      new: {
+        command: 'nu scripts/new-slide.nu',
+        cache: false,
+      },
       build: {
         command: 'vpr -F "./slides/*" --parallel build',
         cache: false,
