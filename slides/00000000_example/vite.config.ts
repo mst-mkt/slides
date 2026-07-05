@@ -8,7 +8,7 @@ export default defineConfig({
         cache: false,
       },
       build: {
-        command: 'slidev build --base /00000000_example/ --out ../../dist/00000000_example',
+        command: 'slidev build --base ./ --router-mode hash --out ../../dist/00000000_example',
         cache: false,
       },
       export: {
