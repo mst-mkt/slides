@@ -5,6 +5,12 @@ info: 検証用のサンプルスライド
 class: text-center
 transition: slide-left
 mdc: true
+favicon: https://serenity.keito.dev/🧶/ico?square
+seoMeta:
+  ogTitle: Example Slide
+  ogUrl: https://slides.keito.dev/00000000_example/
+  ogImage: auto
+  twitterCard: summary_large_image
 ---
 
 # Example Slide
