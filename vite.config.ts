@@ -10,6 +10,10 @@ export default defineConfig({
         command: 'nu scripts/new-slide.nu',
         cache: false,
       },
+      dev: {
+        command: 'nu scripts/dev.nu',
+        cache: false,
+      },
       build: {
         command: 'vpr -F "./slides/*" --parallel build',
         cache: false,
