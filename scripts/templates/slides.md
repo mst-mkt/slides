@@ -1,6 +1,6 @@
 ---
 theme: default
-title: { { SLUG } }
+title: '{{SLUG}}'
 ---
 
 # {{SLUG}}
