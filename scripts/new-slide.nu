@@ -27,7 +27,8 @@ def main [slug?: string, date?: string, --title: string] {
   }
   | ignore
 
+  pnpm install
+
   print $"Created ($dir)"
-  print $"  pnpm install"
   print $"  vp run -F ($name) dev"
 }
