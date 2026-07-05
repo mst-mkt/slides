@@ -1,5 +1,47 @@
 {
   "nodes": {
+    "agent-skills": {
+      "inputs": {
+        "home-manager": "home-manager",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1783255035,
+        "narHash": "sha256-csxkmV7a0zdhWi24Bz23/GQi1zOimCNTDFyS/ezm7sw=",
+        "owner": "Kyure-A",
+        "repo": "agent-skills-nix",
+        "rev": "46337bfdd6ccfcc08766c933a02fff3338ffe30f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Kyure-A",
+        "repo": "agent-skills-nix",
+        "type": "github"
+      }
+    },
+    "home-manager": {
+      "inputs": {
+        "nixpkgs": [
+          "agent-skills",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1782702263,
+        "narHash": "sha256-8/MG4Su7PhnynrmsVO61IeAfrK7GuUEu+E+gwbhy1QQ=",
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "rev": "789a35fbdeb3c46b260096daa0b321c11be527ea",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "type": "github"
+      }
+    },
     "nix-vite-plus": {
       "inputs": {
         "nixpkgs": [
@@ -38,8 +80,26 @@
     },
     "root": {
       "inputs": {
+        "agent-skills": "agent-skills",
         "nix-vite-plus": "nix-vite-plus",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "slidev-skills": "slidev-skills"
+      }
+    },
+    "slidev-skills": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1783056477,
+        "narHash": "sha256-Q7JXt5bJNZ12+pReapc2rkNQ4ZEPXHqvTqrgxgS6WzM=",
+        "owner": "slidevjs",
+        "repo": "slidev",
+        "rev": "c63cb1207d3bc8e0757cfc841c860a3ca317ffc1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "slidevjs",
+        "repo": "slidev",
+        "type": "github"
       }
     }
   },

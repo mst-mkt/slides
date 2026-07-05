@@ -1,24 +1,50 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nix-vite-plus.url = "github:ryoppippi/nix-vite-plus";
-    nix-vite-plus.inputs.nixpkgs.follows = "nixpkgs";
+    nix-vite-plus = {
+      url = "github:ryoppippi/nix-vite-plus";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    agent-skills = {
+      url = "github:Kyure-A/agent-skills-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    slidev-skills = {
+      url = "github:slidevjs/slidev";
+      flake = false;
+    };
   };
 
-  outputs = { nixpkgs, nix-vite-plus, ... }:
+  outputs = { nixpkgs, nix-vite-plus, agent-skills, slidev-skills, ... }:
     let
       forAllSystems = nixpkgs.lib.genAttrs (builtins.attrNames nix-vite-plus.packages);
+
+      agentLib = agent-skills.lib.agent-skills;
+      sources.slidev = {
+        path = slidev-skills;
+        subdir = "skills";
+      };
+      selection = agentLib.selectSkills {
+        inherit sources;
+        catalog = agentLib.discoverCatalog sources;
+        allowlist = [ "slidev" ];
+      };
     in
     {
       devShells = forAllSystems (system:
-        let pkgs = nixpkgs.legacyPackages.${system};
-        in {
+        let
+          pkgs = nixpkgs.legacyPackages.${system};
+          bundle = agentLib.mkBundle { inherit pkgs selection; };
+          localTargets.claude = agentLib.defaultLocalTargets.claude // { enable = true; };
+        in
+        {
           default = pkgs.mkShell {
             packages = [
               pkgs.nodejs-slim_24
               pkgs.pnpm
               nix-vite-plus.packages.${system}.default
             ];
+            shellHook = agentLib.mkShellHook { inherit pkgs bundle; targets = localTargets; };
           };
         });
     };
