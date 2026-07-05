@@ -1,2 +1,6 @@
 .direnv/
 .claude/skills/
+
+node_modules/
+dist/
+exports/

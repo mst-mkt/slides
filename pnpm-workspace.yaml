@@ -1,0 +1,10 @@
+packages:
+  - slides/*
+
+allowBuilds:
+  playwright-chromium: false
+
+catalog:
+  '@slidev/cli': 52.16.0
+  '@slidev/theme-default': 0.25.0
+  playwright-chromium: 1.60.0
