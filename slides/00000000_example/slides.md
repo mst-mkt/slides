@@ -29,7 +29,9 @@ dev サーバーの presenter モードで確認できる
 
 ---
 
-## layout: two-cols
+```yaml
+layout: two-cols
+```
 
 # コードハイライト
 
@@ -49,10 +51,10 @@ export default talks
 
 ---
 
+```yaml
 layout: center
 class: text-center
-
----
+```
 
 # 準備完了 🎉
 
