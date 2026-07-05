@@ -1,6 +1,7 @@
 ---
 theme: default
 title: '{{TITLE}}'
+transition: slide-left
 favicon: https://serenity.keito.dev/🧶/ico?square
 seoMeta:
   ogTitle: '{{TITLE}}'
