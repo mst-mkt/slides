@@ -2,7 +2,10 @@ packages:
   - slides/*
 
 allowBuilds:
+  esbuild: false
   playwright-chromium: false
+  sharp: false
+  workerd: false
 
 catalog:
   '@slidev/cli': 52.16.0

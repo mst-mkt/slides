@@ -1,0 +1,11 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "slides",
+  "compatibility_date": "2026-07-05",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page",
+  },
+  "workers_dev": false,
+  "routes": [{ "custom_domain": true, "pattern": "slides.keito.dev" }],
+}

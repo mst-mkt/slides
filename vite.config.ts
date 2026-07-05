@@ -22,6 +22,10 @@ export default defineConfig({
         command: 'vpr -F "./slides/*" --parallel export',
         cache: false,
       },
+      preview: {
+        command: 'wrangler dev',
+        cache: false,
+      },
     },
   },
   fmt: {
