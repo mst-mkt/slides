@@ -1,6 +1,7 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "slides",
+  "account_id": "aff21982f7963fd8f2d9d373bd3b0f6f",
   "compatibility_date": "2026-07-05",
   "assets": {
     "directory": "./dist",
