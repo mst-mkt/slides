@@ -1,14 +1,14 @@
 ---
 theme: default
-title: '{{SLUG}}'
+title: '{{TITLE}}'
 favicon: https://serenity.keito.dev/🧶/ico?square
 seoMeta:
-  ogTitle: '{{SLUG}}'
+  ogTitle: '{{TITLE}}'
   ogUrl: https://slides.keito.dev/{{NAME}}/
   ogImage: auto
   twitterCard: summary_large_image
 ---
 
-# {{SLUG}}
+# {{TITLE}}
 
 {{DATE}}

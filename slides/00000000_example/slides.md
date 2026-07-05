@@ -31,7 +31,7 @@ dev サーバーの presenter モードで確認できる
 ## このリポジトリの構成
 
 - `slides/${yyyymmdd}_${slug}/` に発表ごとのスライドを置く
-- `vpr new <slug> [yyyymmdd]` で新しいスライドを生成
+- `vpr new <slug> [yyyymmdd] [--title <title>]` で新しいスライドを生成
 
 ---
 
@@ -64,4 +64,4 @@ class: text-center
 
 # 準備完了 🎉
 
-`pnpm --filter 00000000_example dev`
+`vpr -F 00000000_example dev`
