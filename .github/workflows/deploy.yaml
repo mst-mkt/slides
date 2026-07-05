@@ -27,7 +27,7 @@ jobs:
           node-version: '24'
           cache: true
       - name: install chromium
-        run: pnpm --filter './slides/*' exec playwright install --with-deps chromium
+        run: vp exec playwright install --with-deps chromium chromium-headless-shell
       - name: build
         run: vp run build
       - name: deploy

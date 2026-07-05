@@ -6,6 +6,7 @@
     "prepare": "vp config"
   },
   "devDependencies": {
+    "playwright-chromium": "catalog:",
     "vite-plus": "^0.2.2",
     "wrangler": "^4.107.0"
   },
