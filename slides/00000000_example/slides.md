@@ -1,67 +1,55 @@
 ---
 theme: default
 title: Example Slide
-info: 検証用のサンプルスライド
-class: text-center
 transition: slide-left
-mdc: true
 favicon: https://serenity.keito.dev/🧶/ico?square
 seoMeta:
   ogTitle: Example Slide
+  ogDescription: 検証用のサンプルスライド
   ogUrl: https://slides.keito.dev/00000000_example/
   ogImage: auto
   twitterCard: summary_large_image
 ---
 
-# Example Slide
+# (Example) mst-mkt/slides
 
-動作確認用のサンプル
-
-<div class="pt-8 opacity-70">
-  <code>slides/00000000_example</code>
-</div>
+Slidev で作成されたスライドのリポジトリ \
+このスライドはこのリポジトリの参考用のサンプルです
 
 <!--
-これはスピーカーノート
-dev サーバーの presenter モードで確認できる
+スピーカーノート。presenter モードで見える。
 -->
 
 ---
 
-## このリポジトリの構成
+## 構成
 
-- `slides/${yyyymmdd}_${slug}/` に発表ごとのスライドを置く
-- `vpr new <slug> [yyyymmdd] [--title <title>]` で新しいスライドを生成
+```
+slides/
+  <date>_<slug>/
+    slides.md         # スライド本体
+    vite.config.ts    # タスク (dev / build / export)
+    package.json      # 依存
+```
+
+- スライドごとにパッケージを作成
+- vite-task でタスクを管理 (dev, build, ...)
 
 ---
 
-```yaml
-layout: two-cols
-```
+## コマンド
 
-# コードハイライト
-
-```ts {1|2-3|all}
-const tool = 'slidev'
-const talks = ['2026-07-05', '2026-09-01']
-export default talks
-```
-
-::right::
-
-# 動作チェック項目
-
-- [x] dev サーバーが立つ
-- [x] コードのクリックアニメーション
-- [x] `build` で静的出力できる
+- `vpr new` 新しいスライドを作成
+- `vpr dev` dev サーバーを起動
+- `vpr build` 全スライドをビルド
+- `vpr export` PDF に出力
+- `vpr preview` ビルドをローカルで確認
+- `vpr deploy` Cloudflare にデプロイ
 
 ---
 
 ```yaml
 layout: center
-class: text-center
 ```
 
-# 準備完了 🎉
-
-`vpr -F 00000000_example dev`
+https://github.com/mst-mkt/slides
