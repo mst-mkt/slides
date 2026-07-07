@@ -1,0 +1,12 @@
+{
+  "name": "00000000_theme",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@slidev/cli": "catalog:",
+    "slidev-theme-mst-mkt": "workspace:*"
+  },
+  "devDependencies": {
+    "playwright-chromium": "catalog:"
+  }
+}
