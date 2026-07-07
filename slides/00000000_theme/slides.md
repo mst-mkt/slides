@@ -7,6 +7,7 @@ seoMeta:
   ogUrl: https://slides.keito.dev/00000000_theme/
   ogImage: auto
   twitterCard: summary_large_image
+qr: false
 ---
 
 # slidev-theme-mst-mkt
@@ -152,6 +153,7 @@ layout: intro
 
 ```yaml
 layout: end
+qr: false
 ```
 
 # End

@@ -1,6 +1,7 @@
 packages:
   - slides/*
   - themes/*
+  - addons/*
 
 allowBuilds:
   esbuild: false
