@@ -1,6 +1,7 @@
 ---
 theme: default
 title: Example Slide
+titleTemplate: '%s | slides.keito.dev'
 transition: slide-left
 favicon: https://serenity.keito.dev/🧶/ico?square
 seoMeta:
