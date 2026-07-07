@@ -1,0 +1,51 @@
+:root {
+  --slidev-theme-primary: #539aff;
+  --slidev-theme-background: #eef8ff;
+  --slidev-theme-foreground: #434343;
+  --slidev-theme-panel: #ffffff;
+}
+
+.slidev-layout {
+  background: var(--slidev-theme-background);
+  color: var(--slidev-theme-foreground);
+
+  a {
+    @apply font-500 border-b border-transparent hover:border-current;
+    color: var(--slidev-theme-primary);
+  }
+
+  ul > li::marker,
+  ol > li::marker {
+    color: var(--slidev-theme-primary);
+  }
+
+  blockquote {
+    @apply px-4 py-2 rounded-lg border-none;
+    background: var(--slidev-theme-panel);
+    color: var(--slidev-theme-foreground);
+  }
+
+  :not(pre) > code {
+    @apply px-1.5 py-0.5 rounded-md text-[0.9em];
+    background: var(--slidev-theme-panel);
+  }
+
+  /* Shiki はインラインスタイルで背景色を付けるため上書きには !important が必要 */
+  .slidev-code {
+    @apply rounded-lg px-4 py-3;
+    background: var(--slidev-theme-panel) !important;
+  }
+
+  table {
+    @apply rounded-lg;
+    background: var(--slidev-theme-panel);
+  }
+
+  th {
+    @apply font-600;
+  }
+
+  tbody tr:last-child {
+    border-bottom: none;
+  }
+}

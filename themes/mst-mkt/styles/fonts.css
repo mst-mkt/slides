@@ -1,0 +1,5 @@
+/* Some weights are omitted on purpose to balance visual weight via fallback:
+   - Zen Kaku Gothic New: 400 -> 500
+   - Lexend: 700 -> 600 */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@500;700&family=Noto+Color+Emoji&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css');

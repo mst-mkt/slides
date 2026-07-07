@@ -1,0 +1,20 @@
+{
+  "name": "slidev-theme-mst-mkt",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "slidev": {
+    "colorSchema": "light",
+    "defaults": {
+      "canvasWidth": 850,
+      "titleTemplate": "%s | slides.keito.dev",
+      "transition": "slide-left",
+      "favicon": "https://serenity.keito.dev/🧶/ico?square",
+      "fonts": {
+        "sans": "Lexend,Zen Kaku Gothic New,Noto Color Emoji",
+        "mono": "Hack,Zen Kaku Gothic New,Noto Color Emoji",
+        "local": "Lexend,Zen Kaku Gothic New,Hack,Noto Color Emoji"
+      }
+    }
+  }
+}

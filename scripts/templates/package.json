@@ -4,7 +4,7 @@
   "type": "module",
   "dependencies": {
     "@slidev/cli": "catalog:",
-    "@slidev/theme-default": "catalog:"
+    "slidev-theme-mst-mkt": "workspace:*"
   },
   "devDependencies": {
     "playwright-chromium": "catalog:"

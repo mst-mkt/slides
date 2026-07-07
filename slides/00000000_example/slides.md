@@ -1,9 +1,6 @@
 ---
-theme: default
+theme: mst-mkt
 title: Example Slide
-titleTemplate: '%s | slides.keito.dev'
-transition: slide-left
-favicon: https://serenity.keito.dev/🧶/ico?square
 seoMeta:
   ogTitle: Example Slide
   ogDescription: 検証用のサンプルスライド

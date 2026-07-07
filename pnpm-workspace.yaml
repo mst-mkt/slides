@@ -1,5 +1,6 @@
 packages:
   - slides/*
+  - themes/*
 
 allowBuilds:
   esbuild: false
@@ -9,5 +10,4 @@ allowBuilds:
 
 catalog:
   '@slidev/cli': 52.15.0
-  '@slidev/theme-default': 0.25.0
   playwright-chromium: 1.60.0
