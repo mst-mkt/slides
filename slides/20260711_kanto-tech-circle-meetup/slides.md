@@ -244,6 +244,15 @@ layout: statement
 
 ---
 
+# まとめ
+
+- Linux デスクトップはカスタマイズが醍醐味
+- デスクトップシェルを TypeScript で書ける ags がある
+- TypeScript で書くと柔軟で拡張性が高い
+- 自分好みの快適でかっこいいデスクトップをつくろう
+
+---
+
 # 余談: CSS さえ出力できればいいので\.\.\.\.\.\.
 
 UnoCSS などを使用して、生の CSS を書かずにスタイリングすることもできる
@@ -264,15 +273,6 @@ ShojiWM という TypeScript でカスタマイズするウィンドウマネー
 https://github.com/bea4dev/ShojiWM
 
 <video src="https://bea4dev.github.io/ShojiWM/video/example0.mp4" autoplay loop muted playsinline class="rounded-lg h-48 mx-auto" />
-
----
-
-# まとめ
-
-- Linux デスクトップはカスタマイズが醍醐味
-- デスクトップシェルを TypeScript で書ける ags がある
-- TypeScript で書くと柔軟で拡張性が高い
-- 自分好みの快適でかっこいいデスクトップをつくろう
 
 ---
 
