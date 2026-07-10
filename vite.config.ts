@@ -15,7 +15,7 @@ export default defineConfig({
         cache: false,
       },
       build: {
-        command: 'vpr -F "./slides/*" --parallel build',
+        command: 'vpr -F "./slides/*" --concurrency-limit 1 build',
         cache: false,
       },
       export: {
