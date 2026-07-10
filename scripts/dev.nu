@@ -1,7 +1,7 @@
 #!/usr/bin/env nu
 
 def main [] {
-  let names: list<string> = (ls slides | where type == dir | get name | path basename | sort)
+  let names: list<string> = (ls slides | where type == dir | get name | path basename | sort --reverse)
   if ($names | is-empty) { error make { msg: "no slides in slides/" } }
 
   let selected = $"($names | input list --fuzzy 'start dev server for')"
