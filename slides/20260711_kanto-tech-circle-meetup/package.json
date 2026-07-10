@@ -1,0 +1,18 @@
+{
+  "name": "20260711_kanto-tech-circle-meetup",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@slidev/cli": "catalog:",
+    "slidev-addon-qrcode": "workspace:*",
+    "slidev-theme-mst-mkt": "workspace:*"
+  },
+  "devDependencies": {
+    "playwright-chromium": "catalog:"
+  },
+  "slidev": {
+    "addons": [
+      "slidev-addon-qrcode"
+    ]
+  }
+}
