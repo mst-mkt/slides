@@ -15,8 +15,8 @@ export default defineConfig({
         cache: false,
       },
       build: {
-        command: 'vpr -F "./slides/*" --concurrency-limit 1 build',
-        cache: false,
+        command: '',
+        dependsOn: ['build:slides', 'build:index'],
       },
       export: {
         command: 'vpr -F "./slides/*" --parallel export',
@@ -29,6 +29,14 @@ export default defineConfig({
       preview: {
         command: 'wrangler dev',
         cache: false,
+      },
+
+      'build:slides': {
+        command: 'vpr -F "./slides/*" --concurrency-limit 1 build',
+        cache: false,
+      },
+      'build:index': {
+        command: 'nu scripts/build-index.nu',
       },
     },
   },
