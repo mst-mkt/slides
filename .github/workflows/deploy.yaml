@@ -26,6 +26,8 @@ jobs:
         with:
           node-version: '24'
           cache: true
+      - name: setup nushell
+        uses: hustcer/setup-nu@ccd5bb5426b05a32009c2ba967946231f3919c97 # v3.25
       - name: install chromium
         run: vp exec playwright install --with-deps chromium chromium-headless-shell
       - name: build
